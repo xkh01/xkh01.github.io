@@ -1,3 +1,3 @@
 function changeTitle(string){
-	document.title=string;
+	document.title=string; 
 }
