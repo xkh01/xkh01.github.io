@@ -1,11 +1,11 @@
 body{background-color:#ADD8E6;}
 text{font-size:20px;font-family:Microsoft Yahei;}
-.specialtext{font-size:1px;margin:0;padding:0;}
-.stdtext{font-size:25px;font-family:Microsoft Yahei}
-.largetext{font-size:30px;font-family:Microsoft Yahei;}
+.specialText{font-size:1px;margin:0;padding:0;}
+.stdText{font-size:25px;font-family:Microsoft Yahei}
+.largeText{font-size:30px;font-family:Microsoft Yahei;}
 .center{text-align:center;}
-.leftup{position:absolute;top:0px;left:0px;}
-.leftbottom{position:absolute;bottom:0px;left:0px;}
-.rightup{position:absolute;top:0px;right:0px;}
-.rightbottom{position:absolute;bottom:0px;right:0px;}
-.bordertext{border:2px solid #0000ec;}
+.leftUp{position:absolute;top:0px;left:0px;}
+.leftBottom{position:absolute;bottom:0px;left:0px;}
+.rightUp{position:absolute;top:0px;right:0px;}
+.rightBottom{position:absolute;bottom:0px;right:0px;}
+.borderText{border:2px solid #0000ec;}
