@@ -5,7 +5,7 @@ text{font-size:20px;font-family:Microsoft Yahei;}
 .specialText{font-size:1px;margin:0;padding:0;}
 .stdText{font-size:25px;font-family:Microsoft Yahei}
 .largeText{font-size:40px;font-family:Microsoft Yahei;}
-.centerUp{text-align:center;}
+.center{text-align:center;}
 .leftUp{position:absolute;top:0px;left:0px;}
 .leftBottom{position:absolute;bottom:0px;left:0px;}
 .rightUp{position:absolute;top:0px;right:0px;}
