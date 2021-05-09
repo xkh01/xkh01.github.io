@@ -5,6 +5,7 @@ window.onload=function(){
 		user=prompt('留个名字好吗，以便将后称呼您:');
 		if(user!=""&&user!=null)setCookie("username",user,36500);
 	}
+	setCookie("visited","true",36500);
 }
 function changeTitle(string){
 	document.title=string;
