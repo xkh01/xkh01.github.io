@@ -1,11 +1,11 @@
 window.onload=function(){
+	setCookie("visited","true",3650);
 	var user=getCookie('username');
 	if(user!="")alert('欢迎 '+user+' 再次访问');
 	else{
 		user=prompt('留个名字好吗，以便将后称呼您:');
-		if(user!=""&&user!=null)setCookie("username",user,36500);
+		if(user!=""&&user!=null)setCookie("username",user,3650);
 	}
-	setCookie("visited","true",36500);
 }
 function changeTitle(string){
 	document.title=string;
