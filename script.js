@@ -1,20 +1,20 @@
+var temp_n=0,temp_s='',username=getCookie('username');
 window.onload=function(){
 	setCookie('visited','true',3650);
-	var user=getCookie('username');
-	if(user!="")alert('欢迎 '+user+' 再次访问');
+	if(username!="")alert('欢迎 '+username+' 再次访问');
 	else{
 		if(getCookie('yuck')=='true');
 		else{
-			user=prompt('留个名字好吗，以便将后称呼您:');
-			if(user==''||user==null)setCookie('yuck','true',3650);
+			username=prompt('留个名字好吗，以便将后称呼您:');
+			if(username==''||username==null)setCookie('yuck','true',3650);
 			else{
-				setCookie('username',user,3650);
+				setCookie('username',username,3650);
 				setCookie('named','true',3650);
 			}
 		}
 	}
 	if(getCookie('named')=='true'){
-		document.getElementById('welcome').innerHTML='Hi,'+user;
+		document.getElementById('welcome').innerHTML='Hi,'+username;
 	}
 }
 function changeTitle(string){
@@ -22,6 +22,9 @@ function changeTitle(string){
 }
 function backToHome(){
 	window.location.href='https://xkh01.tk';
+}
+function modifyStance(){
+	document.getElementById('welcome').innerHTML='按什么按';
 }
 function setCookie(name,value,exdays){
 	var exp=new Date();

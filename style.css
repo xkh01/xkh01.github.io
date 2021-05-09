@@ -5,7 +5,7 @@ text{font-size:20px;font-family:Microsoft Yahei;}
 .noselect{user-select:none;}
 .stdText{font-size:25px;font-family:Microsoft Yahei}
 .largeText{font-size:40px;font-family:Microsoft Yahei;}
-.leftUp{position:absolute;top:0px;left:0px;}
-.leftBottom{position:absolute;bottom:0px;left:0px;}
-.rightUp{position:absolute;top:0px;right:0px;}
-.rightBottom{position:absolute;bottom:0px;right:0px;}
+.leftUp{position:absolute;top:1px;left:1px;}
+.leftBottom{position:absolute;bottom:1px;left:1px;}
+.rightUp{position:absolute;top:1px;right:1px;}
+.rightBottom{position:absolute;bottom:1px;right:1px;}
