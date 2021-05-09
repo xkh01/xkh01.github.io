@@ -13,6 +13,9 @@ window.onload=function(){
 			}
 		}
 	}
+	if(getCookie('named')=='true'){
+		document.getElementById('welcome').innerHTML='Hi,'+user;
+	}
 }
 function changeTitle(string){
 	document.title=string;
