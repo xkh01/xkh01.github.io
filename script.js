@@ -3,8 +3,10 @@ window.onload=function(){
 	var user=getCookie('username');
 	if(user!="")alert('欢迎 '+user+' 再次访问');
 	else{
-		user=prompt('留个名字好吗，以便将后称呼您:');
-		if(user!=""&&user!=null)setCookie("username",user,3650);
+		if(getCookie('visited')!=null){		//这一行防止用户觉得我们烦人
+			user=prompt('留个名字好吗，以便将后称呼您:');
+			if(user!=""&&user!=null)setCookie("username",user,3650);
+		}
 	}
 }
 function changeTitle(string){
