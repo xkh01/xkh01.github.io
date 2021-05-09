@@ -1,11 +1,13 @@
 window.onload=function(){
-	setCookie("visited","true",3650);
+	setCookie('visited','true',365);
 	var user=getCookie('username');
 	if(user!="")alert('欢迎 '+user+' 再次访问');
 	else{
-		if(getCookie('visited')!=null){		//这一行防止用户觉得我们烦人
+		if(getCookie('yuck')=='true');
+		else{
 			user=prompt('留个名字好吗，以便将后称呼您:');
-			if(user!=""&&user!=null)setCookie("username",user,3650);
+			if(user==''||user==null)setCookie('yuck','true',365);
+			else setCookie('username',user,365);
 		}
 	}
 }
