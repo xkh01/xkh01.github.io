@@ -1,9 +1,13 @@
 var temp_n=0,temp_s='',username=getCookie('username');
 window.onload=function(){
 	setCookie('visited','true',3650);
-	if(username!="")alert('欢迎 '+username+' 再次访问');
+	if(username!=""||username!=null){
+		alert('欢迎 '+username+' 再次访问');
+		setCookie('named','true',3650);
+		setCookie('username',username,3650);
+	}
 	else{
-		if(getCookie('yuck')=='true');
+		if(getCookie('yuck')!='')setCookie('yuck','true',3650);
 		else{
 			username=prompt('留个名字好吗，以便将后称呼您:');
 			if(username==''||username==null)setCookie('yuck','true',3650);
