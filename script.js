@@ -1,13 +1,9 @@
 var temp_n=0,temp_s='',username=getCookie('username');
 window.onload=function(){
 	setCookie('visited','true',3650);
-	if(username!=""||username!=null){
-		alert('欢迎 '+username+' 再次访问');
-		setCookie('named','true',3650);
-		setCookie('username',username,3650);
-	}
+	if(username!="")alert('欢迎 '+username+' 再次访问');
 	else{
-		if(getCookie('yuck')!='')setCookie('yuck','true',3650);
+		if(getCookie('yuck')=='true');
 		else{
 			username=prompt('留个名字好吗，以便将后称呼您:');
 			if(username==''||username==null)setCookie('yuck','true',3650);
@@ -25,10 +21,10 @@ function changeTitle(string){
 	document.title=string;
 }
 function backToHome(){
-	window.location.href='https://xkh01.tk';
+	window.location.href='/';
 }
-function modifyStance(){
-	document.getElementById('welcome').innerHTML='按什么按';
+function modifyStance(id){
+	document.getElementById(id).innerHTML='按什么按';
 }
 function setCookie(name,value,exdays){
 	var exp=new Date();
