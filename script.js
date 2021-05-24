@@ -1,8 +1,8 @@
 var arr=location.href.split('/'),fileName=arr[arr.length-1],temp_n=0,temp_s='',username=getCookie('username');
 window.onload=function(){
 	setCookie('visited','true',3650);
-	if(fileName!='404.html'){
-		if(username!="")alert('欢迎 '+username+' 再次访问');
+	if(getCookie('showed')!='true'){
+		if(username!=""){alert('欢迎 '+username+' 再次访问');setCookie('showed','true',3650);}
 		else{
 			if(getCookie('yuck')=='true');
 			else{
@@ -18,6 +18,9 @@ window.onload=function(){
 			document.getElementById('welcome').innerHTML='Hi,'+username;
 		}
 	}
+}
+function closePage(){
+	delCookie('showed');
 }
 function changeTitle(string){
 	document.title=string;
